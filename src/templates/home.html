@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>{{ title }}</h1>
+{% if form.instance.image %}
+    {{form.instance.image}}
+
+{% endif %}
+{% if not form.instance.image %}
+<form method= "POST" action='' enctype="multipart/form-data">{% csrf_token %}
+    {{form.as_p}}
+    
+    <input id= "uploader" type= "submit" value= "Upload Photo"/>
+</form>
+{% endif %}
+{% endblock content %}
+
