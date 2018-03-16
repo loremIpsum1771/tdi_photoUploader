@@ -3,3 +3,4 @@ Django==1.11.2
 gunicorn==19.7.1
 pycurl==7.43.0
 pytz==2018.3
+Pillow==5.5.0
