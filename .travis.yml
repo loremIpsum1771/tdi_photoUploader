@@ -11,5 +11,5 @@ install:
 
 # run test scripts
 script:
-- python manage.py test 
+- python src/manage.py test 
 
