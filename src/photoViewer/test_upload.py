@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
-from django.test import TestCase, Client
+from django.test import Client
+import unittest
 
-class FileUploadTestClass(TestCase):
+class FileUploadTestClass(unittest.TestCase):
 
     def test_uploaded_file(self):
         c = Client()
